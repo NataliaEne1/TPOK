@@ -1,0 +1,361 @@
+/*Body*/
+body {
+    background-color: #F0F8E0;
+}
+
+/*Header*/
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-family: "Gugi", sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    position: relative;
+    cursor: default;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #FF4081;
+    border-radius: 2px;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+h1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+h3 {
+    font-family: "Poiret One", sans-serif;
+    color: #a2e733;
+    font-size: 2rem;
+    letter-spacing: 9px;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/*SECCIÓN: Inicio*/
+/*Nav*/
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.navbar {
+    background-color: #FF007F
+}
+
+.nav-link {
+    color: #1E1E24 !important;
+    font-weight: bold;
+    font-family: "Poiret One", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFD23F !important;
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.custom-navbar {
+    background-color: black;
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.button {
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    height: 45px;
+    min-width: 120px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 3.5px;
+}
+
+.button:hover {
+    background-color: #a2e733;
+}
+
+.button-group {
+    background-color: #000000;
+    display: flex;
+    gap: 14rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/*Carrusel*/
+#carouselExample {
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 15px solid #000000;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*Newsletter*/
+.newsletter-section {
+    background-color: #000000;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-title {
+    font-family: "Gugi", sans-serif;
+    color: #FF4081;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-text {
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+input[type="email"] {
+    border: 2px solid #a2e733;
+    border-radius: 8px 0 0 8px;
+}
+
+.btn-success {
+    background-color: #a2e733;
+    border: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Poiret One", sans-serif;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #8cd600;
+}
+
+
+/*SECCIÓN: Bio*/
+.bio-section {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bio-titulo {
+    font-family: "Gugi", sans-serif;
+    color: #FF4081;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bio-parrafo {
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1E1E24;
+    line-height: 1.8;
+}
+
+.bio-img img {
+    max-width: 300px;
+    border: 4px solid #a2e733;
+    border-radius: 50%;
+}
+
+/*SECCIÓN: Portfolio*/
+.card-body {
+    text-align: center;
+}
+
+.card .btn-primary {
+    background-color: #a2e733;
+    border-color: #a2e733;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #FF4081;
+    border-color: #FF4081;
+    color: white;
+}
+
+/*SECCIÓN: Contacto*/
+.contacto-section {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(245, 54, 149);
+}
+
+.contacto-titulo {
+    font-family: "Gugi", sans-serif;
+    color: #FF4081;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-texto {
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.2rem;
+    color: #1E1E24;
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    color: #1E1E24;
+}
+
+.form-control {
+    border: 2px solid #a2e733;
+    border-radius: 8px;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1rem;
+    color: #1E1E24;
+}
+
+.form-control:focus {
+    border-color: #FF4081;
+    box-shadow: 0 0 0 0.25rem rgba(255, 64, 129, 0.25);
+}
+
+.btn-enviar {
+    background-color: #a2e733;
+    color: #000000;
+    font-family: "Poiret One", sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #91d12d;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #000000;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-izquierda {
+    flex: 0 0 auto;
+}
+
+.bandera-argentina {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bandera-argentina:hover {
+    width: 60px;
+    cursor: pointer;
+}
+
+.footer-centro {
+    flex: 1;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-redes a {
+    color: #FF4081;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #a2e733;
+}
+
+.footer-texto {
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-mapa {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
