@@ -4,6 +4,7 @@ header {
   padding: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 h1 {
@@ -34,10 +35,10 @@ h1:hover::after {
 
 h3 {
   font-family: "Poiret One", sans-serif;
-  color: $color-secundario;
+  color: #a2e733;
   font-size: 2rem;
   letter-spacing: 9px;
   text-align: center;
-  margin-bottom: 30px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
