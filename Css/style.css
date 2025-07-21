@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+/*Header*/
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Gugi", sans-serif;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+  position: relative;
+  cursor: default;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #FF4081;
+  border-radius: 2px;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+h1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+h3 {
+  font-family: "Poiret One", sans-serif;
+  color: #a2e733;
+  font-size: 2rem;
+  letter-spacing: 9px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  gap: clamp(20px, 8vw, 165px);
+  justify-content: center;
+  background-color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button-group .button {
+  margin: 0 10px;
+  color: #000000;
+  background-color: #FF4081;
+  text-decoration: none;
+  font-family: "Gugi", sans-serif;
+  font-weight: normal;
+  font-size: medium;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-group .button:hover {
+  background-color: #a2e733;
+  color: #FF4081;
+  cursor: pointer;
+}
+
+
+/* Carrusel */
+.carousel {
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Footer*/
+.footer {
+  background-color: #000000;
+  color: #a2e733;
+  padding: 20px 15px;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.footer .footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-contenido {
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+}
+
+.footer .footer-izquierda,
+.footer .footer-centro,
+.footer .footer-mapa {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .footer .footer-izquierda,
+  .footer .footer-centro,
+  .footer .footer-mapa {
+    flex: 1;
+  }
+}
+
+.footer .bandera-argentina {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer .footer-redes a {
+  margin: 0 10px;
+  color: #a2e733;
+  text-decoration: none;
+}
+
+.footer .footer-redes a:hover {
+  text-decoration: none;
+  color: #FF4081;
+}
+
+.footer .footer-texto {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.footer .footer-mapa iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  border: 0;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*Sección Bio*/
+.bio-section {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.bio-img img {
+  max-width: 250px;
+  border-radius: 10px;
+  border: 3px solid #FF4081;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.4);
+}
+
+.bio-titulo {
+  font-family: "Gugi", sans-serif;
+  font-size: 2.8rem;
+  color: #FF4081;
+  margin-bottom: 1rem;
+}
+
+.bio-parrafo {
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.7;
+  color: #000;
+}
+
+/*Sección Contacto*/
+.contacto-section {
+  border: 3px;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(24, 207, 48, 0.2);
+  font-family: "Poiret One", sans-serif;
+  color: #000;
+  border: 3px solid #FF4081;
+}
+
+.contacto-section h2 {
+  font-family: "Gugi", sans-serif;
+  font-weight: bold;
+  color: #FF4081;
+  font-size: 2.5rem;
+}
+
+.contacto-section .form-control {
+  border: 2px solid #FF4081;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease;
+}
+
+.contacto-section .form-control:focus {
+  border-color: #a2e733;
+  box-shadow: 0 0 0 0.2rem rgba(162, 231, 51, 0.25);
+}
+
+.contacto-section label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.contacto-section .btn-primary {
+  background-color: #FF4081;
+  color: #000000;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-section .btn-primary:hover {
+  background-color: #a2e733;
+  color: #a2e733;
+}
+
+.contacto-section .col-md-6 a {
+  background-color: #FF4081;
+  color: #a2e733;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+/*Newsletter*/
+.newsletter-section {
+  border: 2px solid #FF4081;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: aparecerDesdeIzquierda 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.newsletter-title {
+  color: #FF4081;
+  font-family: "Gugi", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-section .form-control {
+  border-radius: 6px;
+  border: 1px solid #a2e733;
+}
+
+.newsletter-section .btn-success {
+  background-color: #a2e733;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/*Animaciones*/
+@keyframes aparecerDesdeIzquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes agrandar {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2.5);
+  }
+}
+
+.bandera-argentina {
+  animation: agrandar 3s ease-in-out infinite;
+}
+

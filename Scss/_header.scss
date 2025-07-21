@@ -1,0 +1,44 @@
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Gugi", sans-serif;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+  position: relative;
+  cursor: default;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #FF4081;
+  border-radius: 2px;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+h1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+h3 {
+  font-family: "Poiret One", sans-serif;
+  color: #a2e733;
+  font-size: 2rem;
+  letter-spacing: 9px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}

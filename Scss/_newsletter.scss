@@ -1,0 +1,37 @@
+.newsletter-section {
+  border: 2px solid #FF4081;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: aparecerDesdeIzquierda 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.newsletter-title {
+  color: #FF4081;
+  font-family: "Gugi", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-section .form-control {
+  border-radius: 6px;
+  border: 1px solid #a2e733;
+}
+
+.newsletter-section .btn-success {
+  background-color: #a2e733;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+}

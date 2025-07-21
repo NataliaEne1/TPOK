@@ -1,0 +1,26 @@
+.button-group {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  .button {
+    display: inline-block;
+    background-color: #ff4081;
+    color: #000;
+    font-family: 'Gugi', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5.75rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #e7336e;
+      color: #a2e733;
+      transform: translateY(-3px);
+    }
+  }
+}
