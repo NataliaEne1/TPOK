@@ -6,6 +6,7 @@
   font-size: 1.1rem;
   text-align: center;
 }
+
 .footer .footer-contenido {
   display: flex;
   flex-wrap: wrap;
@@ -13,48 +14,47 @@
   align-items: center;
   gap: 1rem;
 }
+
 @media (min-width: 768px) {
   .footer .footer-contenido {
     flex-wrap: nowrap;
     text-align: center;
   }
 }
+
 .footer .footer-izquierda,
 .footer .footer-centro,
 .footer .footer-mapa {
   flex: 1 1 100%;
   text-align: center;
 }
+
 @media (min-width: 768px) {
+
   .footer .footer-izquierda,
   .footer .footer-centro,
   .footer .footer-mapa {
     flex: 1;
   }
 }
+
 .footer .bandera-argentina {
   width: 50px;
   height: auto;
   margin-bottom: 10px;
-}
-.footer .footer-redes a {
-  margin: 0 10px;
-  color: #a2e733;
-  text-decoration: none;
-}
-.footer .footer-redes a:hover {
-  text-decoration: none;
-  color: #FF4081;
 }
 
 .footer .footer-texto {
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 .footer .footer-mapa iframe {
   width: 100%;
   max-width: 300px;
   height: 150px;
   border: 0;
   margin-top: 1rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

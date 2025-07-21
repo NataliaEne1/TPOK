@@ -48,31 +48,27 @@ h3 {
 
 .button-group {
   display: flex;
-  gap: clamp(20px, 8vw, 165px);
   justify-content: center;
-  background-color: #000;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: #000000;
+  padding: 1.5rem 0;
+  text-align: center;
 }
-
 .button-group .button {
-  margin: 0 10px;
-  color: #000000;
-  background-color: #FF4081;
-  text-decoration: none;
-  font-family: "Gugi", sans-serif;
-  font-weight: normal;
-  font-size: medium;
-  padding: 8px 16px;
-  border-radius: 6px;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ff4081;
+  color: #000;
+  font-family: "Gugi", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 5.75rem;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
 }
-
 .button-group .button:hover {
-  background-color: #a2e733;
-  color: #FF4081;
-  cursor: pointer;
+  background-color: #e7336e;
+  color: #a2e733;
+  transform: translateY(-3px);
 }
 
 body {
@@ -134,17 +130,6 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .footer-redes a {
-  margin: 0 10px;
-  color: #a2e733;
-  text-decoration: none;
-}
-
-.footer .footer-redes a:hover {
-  text-decoration: none;
-  color: #FF4081;
-}
-
 .footer .footer-texto {
   margin-top: 10px;
   font-size: 0.9rem;
@@ -156,7 +141,9 @@ body {
   height: 150px;
   border: 0;
   margin-top: 1rem;
-} 
+}
+
+
 @keyframes aparecerDesdeIzquierda {
   from {
     opacity: 0;
@@ -177,6 +164,47 @@ body {
 }
 .bandera-argentina {
   animation: agrandar 3s ease-in-out infinite;
+}
+
+p.lead {
+  font-family: "Poiret One", cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 2rem 1rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+p.lead:hover {
+  color: #a2e733;
+  cursor: default;
+}
+
+.card-frase {
+  font-family: "Poiret One", cursive;
+  background-color: #fff4fa;
+  border: 2px solid #FF4081;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(255, 64, 129, 0.2);
+  animation: aparecerDesdeIzquierda 1s ease-out;
+}
+.card-frase .card-title {
+  font-family: "Gugi", sans-serif;
+  color: #FF4081;
+  font-weight: bold;
+}
+.card-frase .card-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
 }
 
 .bio-section {
@@ -230,12 +258,14 @@ body {
   border-radius: 8px;
   font-size: 1.1rem;
   padding: 0.75rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .contacto-section .form-control:focus {
   border-color: #a2e733;
   box-shadow: 0 0 0 0.2rem rgba(162, 231, 51, 0.25);
+  transform: scale(1.02);
 }
 
 .contacto-section label {
@@ -257,7 +287,7 @@ body {
 
 .contacto-section .btn-primary:hover {
   background-color: #a2e733;
-  color: #a2e733;
+  color: #000000;
 }
 
 .contacto-section .col-md-6 a {
@@ -271,12 +301,39 @@ body {
   margin-bottom: 5px;
 }
 
+.contacto-section .contacto-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.contacto-section .contacto-section a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #FF4081;
+  color: #000;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+.contacto-section .contacto-section a:hover {
+  background-color: #a2e733;
+  transform: scale(1.1);
+}
+.contacto-section .contacto-section a i {
+  pointer-events: none;
+}
+
 .newsletter-section {
   border: 2px solid #FF4081;
   border-radius: 15px;
   padding: 2rem;
   text-align: center;
   font-family: "Poiret One", sans-serif;
+  font-weight: bold;
   max-width: 700px;
   margin: 0 auto;
   animation: aparecerDesdeIzquierda 1s ease-out;
@@ -308,6 +365,89 @@ body {
   border-radius: 6px;
 }
 
+.card {
+  border: 1px solid #FF4081;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 64, 129, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(162, 231, 51, 0.5);
+  border-color: #a2e733;
+}
+.card .card-img-top {
+  border-bottom: 2px solid #FF4081;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+.card .card-body {
+  padding: 1rem 1.25rem;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.card .card-body .card-title {
+  font-family: "Gugi", cursive;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #FF4081;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+.card .card-body .card-tex {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.card .card-body .btn-primary {
+  background-color: #FF4081;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  transition: background-color 0.3s ease;
+}
+.card .card-body .btn-primary:hover {
+  background-color: #a2e733;
+  color: #000;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-item .page-link {
+  color: #FF4081;
+  border: 1px solid #FF4081;
+  border-radius: 8px;
+  margin: 0 6px;
+  margin-top: 3rem;
+  padding: 0.5rem 0.9rem;
+  font-family: "Gugi", cursive;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.page-item .page-link:hover {
+  background-color: #a2e733;
+  color: #000000;
+  border-color: #a2e733;
+  text-decoration: none;
+}
+.page-item.disabled .page-link {
+  color: #ccc;
+  border-color: #ccc;
+  pointer-events: none;
+  cursor: default;
+  background-color: transparent;
+}
+
 @keyframes aparecerDesdeIzquierda {
   from {
     opacity: 0;
@@ -328,4 +468,58 @@ body {
 }
 .bandera-argentina {
   animation: agrandar 3s ease-in-out infinite;
+}
+
+.footer .footer-redes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .footer-redes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #a2e733;
+  color: #a2e733;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.footer .footer-redes a:hover {
+  background-color: #FF4081;
+  color: #000;
+  border-color: #FF4081;
+  transform: scale(1.1);
+}
+
+/* Botón scroll */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #a2e733;
+  color: #fff;
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+.scroll-top-btn:hover {
+  background-color: #ff4081;
+  transform: scale(1.1);
+}
+.scroll-top-btn i {
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
